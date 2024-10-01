@@ -17,7 +17,15 @@ const SignupCard = () => {
   };
 
   return (
-    <div className="signupcard">
+    <div
+      className="signupcard"
+      style={{
+        position: "absolute",
+        top: "50%",
+        left: "50%",
+        transform: "translate(-50%, -50%)",
+      }}
+    >
       <h1>Registration Form</h1>
       <form action="" onSubmit={handleSubmit}>
         <label htmlFor="">First Name</label>
@@ -27,12 +35,14 @@ const SignupCard = () => {
           value={formData.fName}
           placeholder="First Name"
           onChange={(event) => handleInputChange(event)}
+          required
         />
 
         <label htmlFor="">Last Name</label>
         <input
           type="text"
           name="lName"
+          required
           value={formData.lName}
           placeholder="Last Name"
           onChange={(event) => handleInputChange(event)}
@@ -40,8 +50,9 @@ const SignupCard = () => {
 
         <label htmlFor="">Email</label>
         <input
-          type="text"
+          type="email"
           name="email"
+          required
           value={formData.email}
           placeholder="Email"
           onChange={(event) => handleInputChange(event)}
@@ -49,6 +60,7 @@ const SignupCard = () => {
 
         <label htmlFor="">Password</label>
         <input
+          required
           type="text"
           name="password"
           value={formData.password}

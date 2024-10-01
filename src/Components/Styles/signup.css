@@ -1,11 +1,11 @@
-.sign_up{
+/* .sign_up{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background-color: rgb(109, 1, 1);
     display: flex;
-}
+} */
 .signupcard{
     width: 450px;
     background-color: rgb(252, 234, 234);
